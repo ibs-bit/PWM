@@ -73,10 +73,10 @@ def action(deviceName, action):
     
 	templateData = {
 	 
-      'ledYlw'  : ledstatus,
+      'led'  : ledstatus,
    
 	}
 	return render_template('index.html', **templateData)
 
 if __name__ == "__main__":
-   app.run(host='0.0.0.0', threaded=True, port=8080, debug=True)
+   app.run(host='0.0.0.0', threaded=True, port=8008, debug=True)
